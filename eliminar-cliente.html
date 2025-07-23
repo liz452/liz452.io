@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eliminar Cliente</title>
+  <link rel="stylesheet" href="../css/modificar.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Eliminar Cliente</h1>
+    <form action="../bdphp/eliminar_cliente.php" method="POST" class="formulario">
+      <label for="ID_Cliente">ID del Cliente a eliminar:</label>
+      <input type="number" name="ID_Cliente" id="ID_Cliente" required />
+      
+      <button type="submit">Eliminar</button>
+    </form>
+  </div>
+</body>
+</html>

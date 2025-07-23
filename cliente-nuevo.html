@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cliente Nuevo</title>
+  <link rel="stylesheet" href="../css/modificar.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cliente Nuevo</h1>
+    <form action="../bdphp/agregar-cliente.php" method="post" class="formulario">
+      <label for="ID_Cliente">ID Cliente:</label>
+      <input type="number" id="ID_Cliente" name="ID_Cliente" required min="1" />
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellidoPat">Apellido Paterno:</label>
+      <input type="text" id="apellidoPat" name="apellidoPat" required />
+
+      <label for="apellidoMat">Apellido Materno:</label>
+      <input type="text" id="apellidoMat" name="apellidoMat" />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="number" id="telefono" name="telefono" required min="1" />
+
+      <label for="edad">Edad:</label>
+      <input type="text" id="edad" name="edad" required />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required />
+
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+</body>
+</html>
+

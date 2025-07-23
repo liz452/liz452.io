@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modificar Compras</title>
+    <link rel="stylesheet" href="../css/modificar.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Compra</h1>
+        <form action="../bdphp/modificar_compra.php" method="POST" class="formulario">
+            <label for="idCompra">ID Compra *</label>
+            <input type="number" id="idCompra" name="idCompra" placeholder="ID Compra" required />
+
+            <label for="idCliente">ID Cliente</label>
+            <input type="text" id="idCliente" name="idCliente" placeholder="ID Cliente" />
+
+            <label for="idProducto">ID Producto</label>
+            <input type="number" id="idProducto" name="idProducto" placeholder="ID Producto" />
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+
+            <label for="localidad">Localidad</label>
+            <input type="text" id="localidad" name="localidad" placeholder="Localidad" />
+
+            <label for="numProductos">Número de Productos</label>
+            <input type="text" id="numProductos" name="numProductos" placeholder="Número de Productos" />
+
+            <label for="numTarjeta">Número de Tarjeta</label>
+            <input type="text" id="numTarjeta" name="numTarjeta" placeholder="Número de Tarjeta" />
+
+            <button type="submit" name="modificar">Modificar</button>
+        </form>
+    </div>
+</body>
+</html>

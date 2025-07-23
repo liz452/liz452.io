@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Realizar Compra</title>
+  <link rel="stylesheet" href="../css/modificar.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Realizar Compra</h1>
+    <form action="../bdphp/realizar_compra.php" method="post" class="formulario">
+      <label for="idCompra">ID Compra:</label>
+      <input type="text" id="idCompra" name="idCompra" required />
+
+      <label for="idCliente">ID Cliente:</label>
+      <input type="text" id="idCliente" name="idCliente" required />
+
+      <label for="idProducto">ID Producto:</label>
+      <input type="text" id="idProducto" name="idProducto" required />
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="localidad">Localidad:</label>
+      <input type="text" id="localidad" name="localidad" />
+
+      <label for="numProductos">Número de Productos:</label>
+      <input type="number" id="numProductos" name="numProductos" min="1" required />
+
+      <label for="numTarjeta">Número de Tarjeta:</label>
+      <input type="text" id="numTarjeta" name="numTarjeta" maxlength="16" pattern="\d{16}" placeholder="Solo números (16 dígitos)" required />
+
+      <button type="submit">Realizar Compra</button>
+    </form>
+  </div>
+</body>
+</html>
