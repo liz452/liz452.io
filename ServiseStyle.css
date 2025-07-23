@@ -1,0 +1,253 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    background-color: #e28da7;
+    color: #5d4037;
+    padding: 0 20px;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #fdf1f4;  /* Color de fondo suave */
+    color: #5d4037;  /* Color de texto */
+    padding: 20px 40px;  /* Espaciado más amplio para una apariencia más limpia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f5d1e0; /* Línea sutil */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);  /* Sombra ligera para destacar el header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;  /* Tamaño más pequeño para el logo */
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 15px;  /* Espacio entre el logo y el texto */
+}
+
+/*.logo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #b85f89;
+    letter-spacing: 1px;
+    font-weight: normal;
+}*/
+.logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.2em;
+    color: #991552;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;  /* Espacio entre los elementos */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-family: 'Playfair Display', serif;
+    color: #5d4037;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    background-color: #ffb6c1;  /* Color rosa al hacer hover */
+    color: #ffffff;  /* Color de texto blanco al hacer hover */
+    transition: 0.3s ease-in-out;
+}
+
+/* Barra de navegación con subrayado elegante */
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #b85f89;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url('flores-hero.jpg');  /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(241, 181, 186, 0.932);  /* Fondo rosado con transparencia */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;  /* Espaciado mayor para una presentación más lujosa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8);  /* Fondo blanco translúcido */
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    color: #5d4037;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    color: #b85f89;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #5d4037;
+    margin-bottom: 30px;
+}
+
+/* Botón de llamada a la acción (CTA) */
+.cta-button {
+    background-color: #ffb6c1;  /* Rosa suave */
+    color: #5d4037;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Sombra en el botón */
+}
+
+.cta-button:hover {
+    background-color: #f48fb1;  /* Color más intenso al hacer hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Sección de los tipos de servicios */
+.featured {
+    text-align: center;
+    margin: 60px 0;
+    padding: 0 20px;
+    background-color: #fdf1f4;  /* Fondo suave y femenino */
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+.featured h2 {
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #b85f89;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+/* Disposición de los productos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);  /* Efecto de zoom al hacer hover */
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #b85f89;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #5d4037;
+    line-height: 1.5;
+}
+
+/* Estilo para los productos en dispositivos móviles */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #9b3563;
+    color: #cec0bb;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #b85f89;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
